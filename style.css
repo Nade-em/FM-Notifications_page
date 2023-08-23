@@ -1,0 +1,140 @@
+ @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap');
+
+ :root {
+     --white: hsl(0, 0%, 100%);
+     --Very_light_grayish_blue: hsl(210, 60%, 98%);
+     --Light_grayish_blue: hsl(211, 68%, 94%);
+     --Dark_grayish_blue: hsl(219, 12%, 42%);
+     --Very_dark_blue: hsl(224, 21%, 14%);
+     --Blue: hsl(219, 85%, 26%);
+ }
+
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     color: var(--Very_dark_blue);
+     font-family: 'Plus Jakarta Sans', sans-serif;
+ }
+
+ .main-container {
+     box-shadow: 2px 2px 2px var(--Light_grayish_blue), -2px -2px 2px var(--Light_grayish_blue);
+     padding: 0.5rem;
+     max-width: 55rem;
+     margin: 4rem auto;
+ }
+
+ .not-num {
+     font-weight: 800;
+     background: var(--Blue);
+     padding: 0.5rem;
+     color: var(--white);
+     border-radius: 6px;
+     margin: 0 0.5rem;
+ }
+
+ .notfi {
+     color: var(--Very_dark_blue);
+     font-weight: 600;
+ }
+
+ .header {
+     display: flex;
+     justify-content: space-between;
+
+     padding: 0.4rem;
+ }
+
+ /*  */
+ .row-notif {
+     margin: 1rem 0;
+     padding: 0.8rem;
+     display: flex;
+     align-items: center;
+     background: var(--Very_light_grayish_blue);
+ }
+
+ .pro-des {
+     margin: 0 1rem;
+ }
+
+ .time-sta {
+     color: var(--Dark_grayish_blue);
+ }
+
+ .rizky-comment {
+     display: block;
+     max-width: 35rem;
+     padding: 1rem;
+     margin: 0.5rem auto;
+     border: solid var(--Light_grayish_blue);
+     border-radius: 8px;
+ }
+
+ .kimberly {
+     display: flex;
+ }
+
+ .kimberly img {
+     max-width: 40px;
+     max-height: 40px;
+     margin: 0 1rem;
+     justify-content: center;
+ }
+
+ .chess {
+     color: var(--Blue);
+     font-weight: 800;
+ }
+
+ .attribution {
+     text-align: center;
+     background: var(--Dark_grayish_blue);
+     padding: 0.5rem 0;
+     color: var(--white);
+ }
+
+ .attribution a {
+     color: blue;
+     text-decoration: none;
+ }
+
+ /* hover effects */
+ .chess:hover,
+ .kimberly img {
+     cursor: pointer;
+ }
+
+ .person-name:hover,
+ .mark-all {
+     cursor: pointer;
+     color: var(--Blue);
+ }
+
+ .rizky-comment:hover {
+     cursor: pointer;
+     background: var(--Light_grayish_blue);
+ }
+
+ .attribution a:hover {
+     opacity: 0.4;
+ }
+
+ @media screen and (min-width: 320px) and (max-width: 768px) {
+     body {
+         font-size: 14px;
+     }
+
+     .main-container {
+         max-width: 100%;
+         margin: 0;
+     }
+
+     .pro-img {
+         max-width: 70px;
+         max-height: 70px;
+     }
+ }
